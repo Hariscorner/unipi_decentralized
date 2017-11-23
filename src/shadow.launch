@@ -1,0 +1,11 @@
+<launch>
+	<param name="safedia" value="1" />
+	<param name="pubrate" value="4" />
+	<param name="maxvel" value="10" />
+<!--	<node pkg="shadow_algorithm" type="yaml_creator" name="my_yaml_creator" > </node>	-->
+	<node pkg="turtlesim" type="turtlesim_node" name="simulator" > </node>
+	<node pkg="unipi_decentralized" type="unipi_decentralized_node" name="ourturtlenode" output="screen" launch-prefix="xterm -bg Teal -geometry 120x80+2000+10 -e"> 
+		<rosparam command="load" file="//home/hari/catkin_ws/src/navigation_oru-release/unipi_decentralized/params/params6.yaml" />
+	</node>
+	<node pkg="unipi_decentralized" type="kill_turtle_node" name="myshadowkiller" />
+</launch>

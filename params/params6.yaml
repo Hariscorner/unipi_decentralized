@@ -1,0 +1,10 @@
+{
+T1Name: myturtle1,
+T1Theta: 90, 
+T1X: 5, 
+T1Y: 0, 
+T2Name: myturtle2, 
+T2Theta: 0, 
+T2X: 0, 
+T2Y: 5
+}
